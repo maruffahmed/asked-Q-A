@@ -1,0 +1,23 @@
+@import './style/custom';
+
+body{
+    font-size: 0.8rem;
+}
+
+@include media-breakpoint-up("md"){
+    body{
+        font-size: 1rem;
+    }
+}
+// Custom class
+.container-custom{
+    width: 88.5%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@import "./style/components/navbar",
+        "./style/components/add_question",
+        "./style/components/main",
+        "./style/components/aside",
+        "./style/components/timeline";

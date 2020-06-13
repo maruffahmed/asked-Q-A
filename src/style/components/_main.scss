@@ -1,0 +1,31 @@
+// Main section
+.main-section{
+    position: relative;
+    & aside{
+        display: none;
+        @include media-breakpoint-up("md"){
+            width: 25%;
+            display: block;
+        }
+    }
+    @include media-breakpoint-down("md"){
+        & aside.active{
+            display: block;
+            width: 75%;
+            height: 100vh;
+            position: absolute;
+            padding: 1rem;
+            background: #fff;
+            z-index: 999;
+            left: -1.3rem;
+            top: 6rem;
+            box-shadow: 1px 4px 8px 0px #dddddd;
+        }
+    }
+    & .timeline{
+        width: 100%;
+        @include media-breakpoint-up("md"){
+            width: 75%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+
+// Add questions
+.add-questions{
+    min-height: 5rem;
+    & .add-questions_form{
+        background: color("white");
+        width: 100%;
+        top: 2.5rem;
+        right: 0;
+        @include media-breakpoint-up("md"){
+            width: 75%;
+        }
+    }
+}

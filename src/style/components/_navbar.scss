@@ -1,0 +1,15 @@
+// Navbar
+.profile-info{
+    @include media-breakpoint-up("sm"){
+        padding-left: 1rem;
+        border-left: 1px solid $dark;
+    }
+}
+.profile-dropdown{
+    & img{
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        object-position: center;
+    }
+}

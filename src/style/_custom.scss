@@ -1,0 +1,33 @@
+$theme-colors: (
+  "dark" : #515866,
+  "orange": #F58D39,
+  "pink" : #EFC4B3,
+  "skin" : #ECA97C
+);
+
+@import "~bootstrap/scss/bootstrap";
+@import "./mixin/customization";
+
+// Badge customization
+$badge-types : "primary","danger","warning","dark","secondary","info","success","orange";
+@each $badge in $badge-types {
+  @include badge($badge,$badge);
+}
+
+.btn-orange{
+  color: color("white")!important;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 0.2rem theme-color-level("orange",-8)!important;
+}
+
+.navbar-brand{
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  border-right: 1px solid;
+}
+
+.dropdown-toggle::after{
+  display: none!important;
+}
