@@ -57,6 +57,7 @@ function Aside({active}) {
                                             variants={aiseItems}
                                             >
                                                 <Form.Check
+                                                custom
                                                 type="checkbox"
                                                 id={`checkbox-${dep}`}
                                                 label={dep}
