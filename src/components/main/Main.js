@@ -3,7 +3,7 @@ import Aside from './Aside'
 import Timeline from './Timeline'
 
 function Main() {
-    const [asideActive, setAsideActive] = useState(true);
+    const [asideActive, setAsideActive] = useState(false);
     return (
         <main className="main-section mt-5">
             <div className="container-custom d-flex">

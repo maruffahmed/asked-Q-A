@@ -1,0 +1,19 @@
+// custom form mixin
+
+// checkbox mixin
+@mixin custom_checkbox($color : "primary"){
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: theme-color-level($color,-5)!important;
+        border-color: theme-color-level($color,0)!important;
+    }
+    
+    .custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem theme-color-level($color,-5)
+    }
+    .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem theme-color-level($color,-5)
+    }
+    .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+        background-color: #C8FFC8; 
+    }
+}
