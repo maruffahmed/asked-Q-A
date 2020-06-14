@@ -8,12 +8,25 @@
     }
     
     .custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem theme-color-level($color,-5)
+        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem theme-color-level($color,-5);
+        border-color: theme-color-level($color,-5);
     }
     .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem theme-color-level($color,-5)
+        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem theme-color-level($color,-5);
+        border-color: theme-color-level($color,-5);
     }
     .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
         background-color: #C8FFC8; 
     }
+}
+
+// custom form input
+@mixin custom-input ($color : "primary") {
+    .form-control:focus,.custom-select:focus{
+        border-color:theme-color-level($color,-5)!important;
+        box-shadow: 0 0 0 0.2rem theme-color-level($color,-5)!important;
+    }
+    // .custom-select option:hover {
+    //     background: theme-color-level($color,0)!important;
+    // }
 }

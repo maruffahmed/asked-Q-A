@@ -27,7 +27,7 @@ function Aside({active}) {
             initial="hide"
             animate="show"
             >
-                <h6 className="text-dark">{<BsGridFill/>} Departments</h6>
+                <h6 className="text-dark">{<BsGridFill/>} Category</h6>
 
                 <FilterOptions departments={departments}/>
             </motion.aside>

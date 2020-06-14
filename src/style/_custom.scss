@@ -19,6 +19,9 @@ $badge-types : "primary","danger","warning","dark","secondary","info","success",
 // Checkbox customization
 @include custom_checkbox("orange");
 
+//Custom form input customization
+@include custom-input("orange");
+
 .btn-orange{
   color: color("white")!important;
 }
