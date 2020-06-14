@@ -40,3 +40,6 @@ $badge-types : "primary","danger","warning","dark","secondary","info","success",
 .dropdown-toggle::after{
   display: none!important;
 }
+.dropdown-menu{
+  z-index: 999999999999;
+}
