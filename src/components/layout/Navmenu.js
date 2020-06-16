@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {Navbar,Nav,NavDropdown,InputGroup, FormControl,Image} from 'react-bootstrap'
 import {BsSearch} from 'react-icons/bs'
 // import {FaRegUser,FaRegBell} from 'react-icons/fa'
@@ -8,7 +9,7 @@ function Navmenu() {
     return (
         <header>
         <Navbar collapseOnSelect bg="white" variant="light">
-            <Navbar.Brand href="#home" className="font-weight-bold text-dark">Q&A</Navbar.Brand>
+            <Link to="/" className="navbar-brand font-weight-bold text-dark">Q&A</Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Nav className="navbar-search mr-auto my-2 my-sm-0">
                 <InputGroup>

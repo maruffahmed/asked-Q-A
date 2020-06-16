@@ -1,0 +1,14 @@
+.like-btn{
+    overflow: hidden;
+    & .like{
+        cursor: pointer;
+        &:hover,&.active{
+            color : $danger!important;
+        }
+    }
+}
+.vote-btn{
+    & .vote{
+        cursor: pointer;
+    }
+}

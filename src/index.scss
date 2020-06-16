@@ -15,9 +15,15 @@ body{
     margin: 0 auto;
     position: relative;
 }
+a{
+    text-decoration: none!important;
+}
 
 @import "./style/components/navbar",
         "./style/components/add_question",
         "./style/components/main",
         "./style/components/aside",
-        "./style/components/timeline";
+        "./style/components/timeline",
+        "./style/components/404",
+        "./style/components/page_transition",
+        "./style/components/smallUI";

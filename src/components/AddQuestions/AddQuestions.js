@@ -33,10 +33,31 @@ const formElement = {
     })
 }
 
+const pageTransition = {
+    hide : {
+        opacity : 0
+    },
+    show : {
+        opacity : 1
+    },
+    exit : {
+        opacity : 0,
+        transition : {
+            duration : 0.5
+        }
+    }
+}
+
 function AddQuestions() {
     const [isFormOpen, setIsFormOpen] = useState(false);
     return (
-        <div className="add-questions bg-pink">
+        <motion.div 
+        className="add-questions bg-pink"
+        variants={pageTransition}
+        initial="hide"
+        animate="show"
+        exit="exit"
+        >
             <div className="container-custom">
                 <AnimatePresence>
                     
@@ -104,7 +125,7 @@ function AddQuestions() {
 
                 </AnimatePresence>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

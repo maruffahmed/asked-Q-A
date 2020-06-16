@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {Card, Badge} from 'react-bootstrap'
 import {FaFire,FaUser} from 'react-icons/fa'
 import {BsFilterLeft} from 'react-icons/bs'
@@ -55,7 +56,9 @@ function Timeline({active,activeAside}) {
                         <Badge pill variant="primary" className="mr-3">Legal</Badge>
                     </div>
 
-                    <Card.Title as="h5" className="mt-4 text-dark">What comes first, a chicken or egg?</Card.Title>
+                    <Link to="single">
+                        <Card.Title as="h5" className="mt-4 text-dark">What comes first, a chicken or egg?</Card.Title>
+                    </Link>
 
                     <div className="question-info mt-3 d-flex justify-content-between align-items-center">
                         <div className="ask-by">
