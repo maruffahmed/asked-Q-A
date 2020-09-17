@@ -12,19 +12,19 @@ function Footer() {
                     <div className="social-link mb-2">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="/">
                                     <FaFacebookSquare size="1.5rem"/>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="/">
                                     <FaTwitterSquare size="1.5rem"/>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="/">
                                     <FaLinkedin size="1.5rem"/>
                                 </a>
                             </li>
