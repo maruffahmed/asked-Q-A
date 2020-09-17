@@ -86,7 +86,9 @@ function Timeline({active,activeAside}) {
                         <Badge pill variant="secondary" className="mr-3">Product</Badge>
                     </div>
 
-                    <Card.Title as="h5" className="mt-4 text-dark">Why sky is blue?</Card.Title>
+                    <Link to="single">
+                        <Card.Title as="h5" className="mt-4 text-dark">Why sky is blue?</Card.Title>
+                    </Link>
 
                     <div className="question-info mt-3 d-flex justify-content-between align-items-center">
                         <div className="ask-by">
@@ -115,7 +117,9 @@ function Timeline({active,activeAside}) {
                         <Badge pill variant="dark" className="mr-3">Programming</Badge>
                     </div>
 
-                    <Card.Title as="h5" className="mt-4 text-dark">Hi, do you have a good A/B testing tools to recommend to push features gradually to users?</Card.Title>
+                    <Link to="single">
+                        <Card.Title as="h5" className="mt-4 text-dark">Hi, do you have a good A/B testing tools to recommend to push features gradually to users?</Card.Title>
+                    </Link>
 
                     <div className="question-info mt-3 d-flex justify-content-between align-items-center">
                         <div className="ask-by">

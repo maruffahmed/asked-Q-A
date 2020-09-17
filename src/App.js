@@ -7,6 +7,7 @@ import AddQuestions from './components/AddQuestions/AddQuestions'
 import Main from './components/main/Main'
 import NotFound from './components/NotFound'
 import SingleQuestionPage from './components/SingleQuestionPage/SingleQuestionPage'
+import Footer from './components/layout/Footer'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             </Switch>
 
           </AnimatePresence>
+          <Footer/>
         </Container>
       </div>
   );

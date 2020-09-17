@@ -1,0 +1,20 @@
+// Footer
+footer{
+    .social-link{
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                float: left;
+                margin-right: 0.5rem;
+                a{
+                    color: $dark;
+                }
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
